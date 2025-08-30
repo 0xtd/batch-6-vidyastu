@@ -46,6 +46,12 @@ const Navbar = () => {
           >
             <li>Contact</li>
           </Link>
+          <Link
+            to={'/create-product'}
+            className='bg-amber-600 p-3'
+          >
+            <li>Create New Product</li>
+          </Link>
         </ul>
       </div>
     </div>
