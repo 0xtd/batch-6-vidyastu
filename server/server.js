@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 require('dotenv').config();
 const app = express();
 const port = 3000;
@@ -21,6 +22,11 @@ db.once("open", () => {
 });
 
 // Middleware
+app.use(
+  cors({
+    origin: "*",
+  })
+)
 app.use(express.json());
 app.use(productRoutes);
 

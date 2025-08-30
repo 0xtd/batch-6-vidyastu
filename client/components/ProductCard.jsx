@@ -5,7 +5,7 @@ const ProductCard = ({ title, description, discountedPrice, originalPrice, image
   return (
     <div className='container mx-auto'>
       <div
-        className='w-[300px] h-[450px] border border-zinc-500 flex flex-col items-center p-2'
+        className='w-[300px] h-[650px] border border-zinc-500 flex flex-col items-center p-2'
       >
         <img src={imageUrl} alt={title} className='w-[300px] h-[200px]'/>
         <h2 className='text-2xl font-bold uppercase mt-2'>{title}</h2>
